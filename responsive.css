@@ -1,0 +1,257 @@
+/* Responsive @1410  */
+
+@media only screen and (max-width: 1400px) {
+    .info-text {
+        flex-basis: 48%;
+    }
+
+    .info-text h1 {
+        font-size: 46px;
+        margin-top: 20px;
+    }
+
+    .info-img img {
+        height: 513px;
+    }
+
+    .about-col-1{
+        flex-basis: 54%;
+    }
+
+}
+
+/* Responsive at 1210px */
+
+@media only screen and (max-width: 1200px) {
+
+    .info-row {
+        margin-top: 20px;
+    }
+
+    .info-text {
+        flex-basis: 45%;
+        padding-left: 5px;
+    }
+
+    .info-text h1 {
+        font-size: 41px;
+        margin-top: 20px;
+    }
+
+    .info-img img {
+        height: 450px;
+    }
+
+    .info-text p {
+        font-size: 20px;
+    }
+
+    .about-col-1{
+        flex-basis: 54%;
+        padding-left: 0px !important;
+    }
+
+    .about-col-1 img {
+        height: 20rem;
+    }
+
+    .contact-left .sub-title{
+        font-size: 50px;
+    }
+
+}
+
+/* Responsive at 992px */
+
+@media only screen and (max-width: 992px) {
+
+    .container {
+        padding: 25px 8px;
+    }
+
+    .info-row{
+        margin-bottom: 50px;
+    }
+
+    .info-text{
+        flex-basis: 34%;
+        margin-top: 12%;
+    }
+
+    .info-text h1 {
+        font-size: 33px;
+    }
+
+    .info-img img{
+        height: 412px;
+    }
+
+    #about{
+        margin-top: 12px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .about-col-2 .sub-title{
+        font-size: 48px;
+    }
+
+    .about-col-1 img {
+        height: 250px;
+    }
+
+    .tab-titles{
+        margin-bottom: 8px;
+    }
+
+    .tab-links{
+        margin-right: 24px;
+    }
+
+    h6{
+        font-size: 15px !important;
+    }
+}
+
+
+/* Responsive at 768px */
+@media only screen and (max-width: 768px) {
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: rgb(110, 226, 233);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        display: block;
+        z-index: 5;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .info-row {
+        display: block;
+        margin-top: 0px !important;
+    }
+
+    .info-text {
+        margin-top: 16%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .info-text h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .info-img{
+        text-align: center;
+    }
+
+    .info-img img {
+        height: 300px;
+    }
+
+    /* -------About------- */
+
+
+    #about {
+        padding: 10px 0px;
+    }
+
+    .sub-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-left: 1px;
+        height: 280px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+        height: 620px;
+    }
+
+    .about-col-1 img {
+        margin-top: 20px;
+        height: 222px;
+    }
+
+    .tab-links {
+        margin: 0px 20px;
+    }
+
+    .table-contents ul {
+        padding-left: 10px;
+    }
+
+    .about-col-2 p {
+        padding: 0px 5px;
+    }
+
+    /* ------Contact----- */
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .contact-left {
+        text-align: center;
+    }
+
+    .contact-left p {
+        justify-content: center;
+    }
+
+    .contact-left .sub-title {
+        text-align: center;
+    }
+
+    .contact-right{
+        text-align: center;
+    }
+
+    .contact-right form {
+        margin-left: 0px;
+    }
+
+    form input,
+    form textarea {
+        width: 320px;
+        padding: 15px;
+        border: 0px;
+        background: #e3f6f9;
+        margin: 15px 10px;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+
+}
