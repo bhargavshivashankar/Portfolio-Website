@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="script.js"></script>
 
 </head>
 
@@ -55,7 +56,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Seeking a challenging position in a reputed organization where I can develop new skills, expand my knowledge, and to gain new experience and to utilize my interpersonal skills to acheive organization goals.</p>
+                    <p>Seeking a challenging position in a reputed organization where I can develop new skills, expand
+                        my knowledge, and to gain new experience and to utilize my interpersonal skills to acheive
+                        organization goals.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -121,8 +124,10 @@
                     </div>
                     <div class="table-contents" id="education">
                         <ul>
-                            <li><span>June 2019 - August 2022</span><br>BTech Mechanical at Swami Vivekananda Institute of Technology</li>
-                            <li><span>June 2016 - May 2019</span><br>Diploma Mechanical at Vijay Rural Engineering College</li>
+                            <li><span>June 2019 - August 2022</span><br>BTech Mechanical at Swami Vivekananda Institute
+                                of Technology</li>
+                            <li><span>June 2016 - May 2019</span><br>Diploma Mechanical at Vijay Rural Engineering
+                                College</li>
                         </ul>
                     </div>
                     <div class="table-contents" id="projects">
@@ -145,12 +150,15 @@
                     <p><i class="fa-solid fa-paper-plane"></i><span> bhargavsanju12@gmail.com</span></p>
                     <p><i class="fa-solid fa-phone"></i><span> +918074267842</span></p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/bhargav-shiva-shankar-b73b8a232/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/bhargav-shiva-shankar-b73b8a232/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/bhargavshivashankar/"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/bhargav_chowdary009/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/bhargav_chowdary009/"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://twitter.com/Bhargav92574948"><i class="fa-brands fa-twitter"></i></a>
                     </div>
-                    <a href="/images/RESUME-BHARGAV SHIVA SHANKAR.pdf" download class="btn btn-outline-primary">Download Resume</a>
+                    <a href="/images/RESUME-BHARGAV SHIVA SHANKAR.pdf" download class="btn btn-outline-primary">Download
+                        Resume</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -169,25 +177,25 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/5fe3845bf2.js" crossorigin="anonymous"></script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxRinWC87MRXUSLtgnu_3MIzOdnxYmqrT0MmfvM7PT8AoARB07n4j4F0h7D6baNofWJ/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response =>{
-                msg.innerHTML = "Message sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            } )
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
+
 </html>
