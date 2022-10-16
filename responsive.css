@@ -116,6 +116,11 @@
 
 /* Responsive at 768px */
 @media only screen and (max-width: 768px) {
+
+    #header .container{
+        margin-bottom: 0px;
+    }
+
     nav .fas {
         display: block;
         font-size: 25px;
@@ -175,6 +180,7 @@
 
     #about {
         padding: 10px 0px;
+        margin-top: 0px;
     }
 
     .sub-title {
